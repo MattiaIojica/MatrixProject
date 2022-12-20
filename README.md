@@ -49,3 +49,10 @@ But if you don't, here's all you need to know to play it:
 <li> One potentiometer </li>
 <li> Resistors </li>
 <li> Wires </li>
+
+# Images
+![img1](Images/IMG_2950.jpg)
+![img2](Images/IMG_2951.jpg)
+
+# Video
+[Link to the video!](https://youtu.be/7sEFqCGNVYs)
