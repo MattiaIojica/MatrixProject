@@ -1,4 +1,6 @@
 #include "Arduino.h"
+
+// Joystick class with basics methods
 class Joystick {
 public:
   Joystick(int xPin, int yPin, int swPin);

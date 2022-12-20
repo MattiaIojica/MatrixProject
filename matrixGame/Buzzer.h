@@ -7,3 +7,9 @@ void scrollSound(){
     // delay(100);
     // noTone(buzzerPin);
 }
+
+void eatSound(){
+    // tone(buzzerPin, 1000);
+    // delay(100);
+    // noTone(buzzerPin);
+}
