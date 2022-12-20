@@ -1,0 +1,50 @@
+#include <LiquidCrystal.h>
+
+// Initialize the LCD display and specify the pins that it is connected to
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+const int numMenuItems = 3;  // Number of menu items
+const int numSettingsItems = 3;  // Number of settings items
+
+// Array of strings containing the names of the menu items
+String menuItems[numMenuItems] = {"Play", "Settings", "Quit"};
+
+// Array of strings containing the names of the settings items
+String settingsItems[numSettingsItems] = {"Difficulty", "LCD contrast", "Player name"};
+
+// Index of the currently selected menu item
+int menuIndex = 0;
+
+// Index of the currently selected setting item (within the Settings menu)
+int settingsIndex = 0;
+
+// Flag to indicate whether the game is currently in the Settings menu
+bool inSettingsMenu = false;
+
+void setup() {
+  // Initialize the LCD display and set its dimensions
+  lcd.begin(16, 2);
+
+  // Print a welcome message on the LCD
+  lcd.clear();
+  lcd.print("Welcome to the game!");
+}
+
+void loop() {
+  // Clear the LCD
+  lcd.clear();
+
+  if (inSettingsMenu) {
+    // Display the settings menu
+    lcd.print("Settings");
+    lcd.setCursor(0, 1);
+    lcd.print(settingsItems[settingsIndex]);
+  } else {
+    // Display the main menu
+    lcd.print(menuItems[menuIndex]);
+  }
+
+  // Wait for user input
+  while (true) {
+    // Check if the user pressed the up button
+    if (digitalRead(UP_BUT
