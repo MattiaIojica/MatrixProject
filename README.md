@@ -61,5 +61,6 @@ But if you don't, here's all you need to know to play it:
   <summary> <h6> Bugs </h6> </summary>
   
   <li> Small lag when increasing the snake's length. It won't increase immediately. I see it as an Easter Egg, because you don't grow immediately after you eat, you always need to wait😜</li>
+  <li> Sometimes the food changes is position when started the game. </li>
  
 </details>
